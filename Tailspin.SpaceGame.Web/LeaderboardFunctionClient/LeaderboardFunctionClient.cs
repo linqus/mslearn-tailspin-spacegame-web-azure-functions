@@ -13,7 +13,7 @@ namespace TailSpin.SpaceGame.Web
 
         public LeaderboardFunctionClient(string functionUrl)
         {
-            this._functionUrl = functionUrl;
+            this._functionUrl = $"http://tailspin-space-game-leaderboard-12819.azurewebsites.net/api/LeaderboardFunction";
         }
 
         async public Task<LeaderboardResponse> GetLeaderboard(int page, int pageSize, string mode, string region)
